@@ -1,0 +1,42 @@
+<html ng-app="myApp">     <!-- register app-->
+<head> 
+   <title>Angular Tutorial </title>
+   <script src="lib/jquery.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="lib/angular.min.js"> </script>
+	   <script src="lib/angular-route.min.js"> </script>	 
+	  <script src="app.js"> </script>
+	  
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+
+ </head>
+<body>
+<div>
+   
+   <div class="container">
+   
+   <!--  Header Section -->
+    <div class="header_section" style="top: 50px;">
+		<h3 style="margin-left: 1%">Header</h3>
+	</div>
+
+   <div>
+	   <a href="#/" ng-click=""> First</a>
+	   <a href="#/second" ng-click=""> second </a>
+   </div>
+ 
+ 
+         <!-- page render here-->
+          <div ng-view> </div>
+		
+    
+     <!-- footer section -->	
+     <div class="header_section" style="top: 50px;">
+		<h3 style="margin-left: 1%">footer</h3>
+	</div>
+   </div>
+   
+    
+   </div>
+</body>
+</html>
